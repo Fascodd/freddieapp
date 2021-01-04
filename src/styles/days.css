@@ -1,0 +1,62 @@
+.day-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:100vw;
+    height:100vh;
+    background-color: grey;
+}
+.program-container{
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width:100%;
+    height:50%;
+    background-color: white;
+}
+
+.desc-headers{
+    display: flex;
+    justify-content: space-around;
+    height: 3rem;
+    width: 100%;
+    border:1px solid black
+}
+.day-header{
+    text-align: start;
+    height: 100%;
+    width:25%;
+    border: 1px solid black;
+}
+.warm-ups-header,.working-weights-header{
+    flex:1;
+    text-align: start;
+    height: 100%;
+    border: 1px solid black;
+}
+.desc-headers p{
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.workout-container{
+    display: flex;
+    border:1px solid black;
+    height:4rem;
+    width: 100%;
+}
+.exercise-type{
+    width:25%;
+}
+.workout{
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.rep{
+margin-left:1rem;  
+}
