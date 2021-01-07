@@ -13,6 +13,7 @@ function App() {
           <Route path="/home" component={Home} />
           <Route path="/weeks" component={Weeks} />
           <Route path="/day" component={Day} />
+          <Route path="/" render={() => <div>404 page not found</div>} />
         </Switch>
       </div>
     </Router>
