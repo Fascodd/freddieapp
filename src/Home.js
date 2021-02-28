@@ -2,19 +2,7 @@ import React from "react";
 import "./styles/home.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default function Home() {
-  return (
-    <div className="container">
-      <div className="weeks-container">
-        <Link
-          to={{
-            pathname: "/weeks",
-          }}
-        >
-          <p>link to weeks</p>
-        </Link>
-      </div>
-    </div>
-  );
+  return <div className="home-container">this is home</div>;
 }
 const workouts = [
   { day_num: "1", program_id: "21313", week_id: "431" },

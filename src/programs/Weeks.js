@@ -12,19 +12,13 @@ const workouts = [
   { day_num: "7", program_id: "21319", week_id: "431" },
 ];
 
-export default function Weeks() {
+export default function Weeks(props) {
   const days = workouts.map((day, i) => {
     return (
       <div id={day.program_id} key={i} className="day">
         <h2 className="day-text"> Workout {day.day_num}</h2>
-        <Link
-          to={{
-            pathname: "/day",
-            state: { id: day.program_id, dayNumber: day.day_num },
-          }}
-        >
-          <p>link</p>
-        </Link>
+
+        <button>to workout</button>
       </div>
     );
   });
